@@ -12,6 +12,7 @@ public void removeSpaces(char[] s) {
         if (fast == n) {
             break;
         }
+        // when to move slow: only when copy letters to slow
         if (wordCount > 0) {
             s[slow++] = ' ';  // 2. add ' ' in front of (2nd+) word
         }
